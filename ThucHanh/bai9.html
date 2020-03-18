@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 9</title>
+</head>
+<body>
+<script>
+    let array=['a','n','h','y','c','h'];
+    let data=prompt("Moi nhap vao ky tu:");
+    function checkKyTu(str) {
+        let dem =0;
+        for (let i=0;i<array.length;i++){
+            if(array[i]===str){
+                dem++;
+            }
+        }
+        if (dem>0){
+            return dem;
+        }else {
+            return -1;
+        }
+    }
+    document.write(checkKyTu(data));
+</script>
+</body>
+</html>

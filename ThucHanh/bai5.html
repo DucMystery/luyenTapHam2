@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+<script>
+    function checkMin(a,b,c) {
+        let min=a;
+        if (b<min&& b<=c){
+            min=b;
+        }else if (c<min&& c<=b){
+            min=c;
+        }
+        return min;
+    }
+    let number1=parseInt(prompt('moi nhap vao so a:'));
+    let number2=parseInt(prompt('moi nhap vao so b:'));
+    let number3=parseInt(prompt('moi nhap vao so c:'));
+    alert(checkMin(number1,number2,number3));
+</script>
+</body>
+</html>
